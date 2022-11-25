@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#baling {
+    /* transition: all 1s ease-in-out; */
+    transform-origin: 65% 30%;
+    animation: baling-berputar 1s 3s ease-in-out infinite;
+}
+
+#kabel {
+    transition: all 1s ease-in-out;
+    animation: kabel-nancap 3s ease-in-out forwards;
+}
+
+/* #kipas:hover #baling {
+    transform: rotate(360deg);
+}
+
+#kipas:hover #kabel{
+    transform: translateX(-50px);
+} */
+
+@keyframes baling-berputar {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kabel-nancap{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50px);
+    }
+}
